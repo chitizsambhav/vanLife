@@ -1,0 +1,31 @@
+.vanLife__page404-container{
+    & h1{
+        padding: 2rem 2rem 2rem 4rem;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & a{
+        margin: 2rem auto;
+        text-decoration: none;
+        background-color:#161616;
+        color: #FFFFFF;
+        font-family: var(--default-font);
+        display: grid;
+        width:250px;
+        text-align: center;
+        place-content: center;
+        height: 80px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 31.66px;
+        border-radius: 10px;
+        transition: ease-out 100ms ;
+
+    }
+    & a:hover{
+        transform: scale(1.02,1.02);
+    }
+
+
+}

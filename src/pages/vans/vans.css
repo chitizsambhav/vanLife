@@ -1,0 +1,153 @@
+.vanLife__vans{
+    flex: 1;
+}
+
+.vanLife__list-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding:3rem 5rem;
+   justify-items: center;
+}
+
+
+
+ h1{
+    padding-left: 5rem;
+    font-family: var(--default-font);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33.65px;
+    text-align: left;
+
+}
+
+.vanLife__vans-filter{
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+.vanLife__vans-filter-type{
+    display: flex;
+    & button{
+        margin: 1rem;
+        cursor: pointer;
+    }
+}
+
+.vanLife__vans-filter-clear{
+    padding-left: 1rem;
+    & button{
+
+        border-style: none;
+        background: none;
+        font-family: var(--default-font);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 23.92px;
+        cursor: pointer;
+        color: #4D4D4D;
+
+    }
+
+    & button:hover{
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .vanLife__list-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1{
+        padding-left: 2rem;
+        font-family: var(--default-font);
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 33.65px;
+        text-align: left;
+    
+    }
+}
+
+@media screen and (max-width:680px) {
+
+    h1{
+        padding-left: 2rem;
+    }
+
+    .vanLife__list-container{
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } 
+
+    .vanLife__vans-filter{
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+
+   
+    .vanLife__vans-filter-type{
+            & button{
+                margin: 0.5rem;
+                font-size: 16px;
+                
+
+            }
+            & .van-type{
+                height: 36px;
+                padding: 4px 20px;
+                font-size: 14px;
+            }
+        }
+    
+    .vanLife__vans-filter-clear{
+        & button{
+            font-size: 12px;
+    }
+    
+}}
+
+@media screen and (max-width:480px){
+    .vanLife__list-container{
+        padding: 2rem;
+    }
+    .vanLife__vans-filter{
+        padding-left: 2.5rem;
+        padding-top: 1.5rem;
+    }
+
+   
+    .vanLife__vans-filter-type{
+            & button{
+                margin: 0.4rem;
+                font-size: 14px;
+                
+
+            }
+            & .van-type{
+                height: 30px;
+                padding: 2px 16px;
+                font-size: 12px;
+            }
+        }
+    
+    .vanLife__vans-filter-clear{
+        & button{
+            font-size: 10px;
+    }
+    
+
+}
+}
+
+@media screen and (max-width:375px){
+    .vanLife__vans-filter{
+        padding-left: 1.5rem;
+    }
+}

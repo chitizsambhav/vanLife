@@ -1,0 +1,137 @@
+.vanLife__hostVans{
+    flex:1;
+    & h1{
+        font-family: var(--default-font);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 33.65px;
+        padding: 5rem 0 2rem 3rem;
+
+    }
+}
+
+.vanLife__hostVans-container{
+    padding: 1rem 3rem;
+    & a{
+        display: block;
+        width: 70vw;
+        text-decoration: none;
+    }
+}
+
+.vanLife__hostVans-container__tile{
+    width: 70vw;
+    padding: 0.5rem 0;
+    border-radius: 6px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.vanLife__hostVans-container__tile-img{
+    padding: 1rem;
+    & img{
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+    }
+}
+
+.vanLife__hostVans-container__tile-desc{
+    display: flex;
+    flex-direction: column;
+    & h1{
+        padding: 0 0 1rem 1rem;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 31.66px;
+        text-align: left;
+        color: #161616;
+        ;
+    
+
+    }
+
+    & p{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 31.66px;
+        text-align: left;
+        color:#4D4D4D;
+        ;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .vanLife__hostVans-container{
+        padding: 1rem 2rem;
+        & a{
+            width: 80vw;
+        }
+    }
+
+    .vanLife__hostVans-container__tile{
+        width: 80vw;
+    }
+    .vanLife__hostVans-container__tile-img{
+        & img{
+            width: 120px;
+            height: 120px;
+            border-radius: 5px;
+        }
+    }
+
+    .vanLife__hostVans-container__tile-desc{
+        & h1{
+            padding-bottom:0;
+            font-size: 26px;
+            font-weight: 600;
+        }
+    
+        & p{
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width:425px){
+
+    .vanLife__hostVans{
+        & > h1{
+            padding:3rem 0 2rem 1rem;
+        }
+    }
+    .vanLife__hostVans-container{
+        padding: 1rem 1rem;
+        & a{
+            width: 85vw;
+        }
+    }
+
+    .vanLife__hostVans-container__tile{
+        width: 85vw;
+        padding:0;
+    }
+    .vanLife__hostVans-container__tile-img{
+        & img{
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+        }
+    }
+
+    .vanLife__hostVans-container__tile-desc{
+        & h1{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    
+        & p{
+            font-size: 16px;
+        }
+    }
+}

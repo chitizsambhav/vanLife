@@ -1,0 +1,25 @@
+.vanLife__hostNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+
+    & p{
+        padding: 0 1rem;
+        font-family: var(--default-font);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.92px;
+        & > a{
+            color: #4D4D4D;
+            text-decoration: none;
+        }
+        & > a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.navlink{
+    font-weight: 900;
+}

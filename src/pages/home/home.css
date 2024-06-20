@@ -1,0 +1,75 @@
+.vanLife__home-container{
+    background-image: url(../../assets/vidar-nordli-mathisen-GnLk-OFK3xo-unsplash.jpg);
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex: 1;
+}
+
+.overlay{
+    border-image: 
+    linear-gradient(
+        hsla(130, 0%, 0%, .3),
+        hsla(0, 0%, 30%, .3))
+    fill 1;
+}
+
+
+.vanLife__home-desc{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.vanLife__home-desc h1{
+    font-family: var(--default-font);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+    padding: 5rem;
+    color:#fff;
+}
+
+.vanLife__home-desc p{
+    font-family: var(--default-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 0 5rem;
+    color: #fff;
+    flex-grow: 0.5;
+
+}
+
+.vanLife__home-desc button{
+    width: 494.33px;
+    height: 49.83px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #FF8C38;
+    border-style: none;
+    font-family: var(--default-font);
+    font-size: 15.95px;
+    font-weight: 700;
+    line-height: 31.66px;
+    color: #fff;
+    max-width: 50vw;
+    transition: ease-out 100ms;
+}
+
+.vanLife__home-desc button:hover{
+    transform: scale(1.02, 1.02);
+}
+
+
+
+
+
+
+

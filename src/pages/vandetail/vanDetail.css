@@ -1,0 +1,285 @@
+.vanLife__vandDetail{
+    flex: 1;
+}
+.vanLife-link{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5rem;
+    padding: 2rem 0 4rem 0;
+
+    & a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #201F1D;
+    
+    
+        & p{
+            font-size: 15.95px;
+            font-weight: 500;
+            line-height: 22.92px;
+    
+        }
+    }
+    & a:hover{
+        text-decoration: underline;
+    }
+}
+
+.vanLife__vanDetail-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 5rem 3rem 5rem;
+
+    & img{
+        height: 450px;
+        width: 450px;
+        border-radius: 10px;
+    }
+}
+
+.vanLife__vanDetail-details{
+
+    padding-left: 4rem;
+
+    & .van-type{
+        width: 200px;
+    }
+
+    & h1{
+        padding: 1.5rem 0;
+    }
+
+    & p{
+        padding: 0 0 1.5rem 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 23.92px;
+        text-align: left;
+
+    }
+
+    & .price{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 44.15px;
+
+    }
+
+    & .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 2rem;
+        & .van-type{
+            order:2;
+        }
+        & h1{
+            order:1;
+        }
+    }
+
+    & .vanLife__vanDetail-cta{
+        padding-top: 1.5rem;
+       & button{
+        width: 100%;
+        border-style: none;
+        height: 49.83px;
+        background: #FF8C38;
+        font-family: var(--default-font);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 31.66px;
+        text-align: center;
+        color: #fff;
+        transition:  ease-out 50ms;
+        cursor: pointer;
+       }
+       & button:hover{
+        transform: scale(1.02,1.02);
+       }
+    }
+
+}
+
+@media screen and (max-width:1024px){
+
+    .vanLife__vanDetail-hero{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        margin: 0 4rem 3rem 4rem;
+    
+        & img{
+            height: 400px;
+            width: 400px;
+            border-radius: 10px;
+        }
+    }
+    .vanLife__vanDetail-details{
+
+        padding-left: 3rem;
+    }
+
+    .vanLife__vanDetail-details {
+        & .van-type{
+        width: 150px;
+    }
+        & .header{
+            padding-right: 0;
+        }
+    }
+    
+}
+
+@media screen and (max-width:832px){
+
+    .header h1{
+        font-size: 24px;
+        line-height: 28px;
+        padding: 1.5rem 0;
+    }
+
+    .vanLife-link{
+        padding-bottom: 2rem;
+    }
+
+    
+    .vanLife__vanDetail-hero{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        margin: 0 2rem 3rem 2rem;
+    
+        & img{
+            height: 350px;
+            width: 350px;
+            border-radius: 10px;
+        }
+    }
+    .vanLife__vanDetail-details{
+        & .price{
+            font-size: 20px;
+        }
+        & p{
+            padding-bottom: 1rem;
+        }
+
+        & .vanLife__vanDetail-cta{
+            padding-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:718px){
+    .vanLife__vanDetail-details{
+
+        padding-left: 2rem;
+    }
+
+    .header h1{
+        font-size: 22px;
+        line-height: 26px;
+        padding: 0.5rem 0;
+    }
+
+    .vanLife__vanDetail-details{
+        & .price{
+            font-size: 18px;
+        }
+        & p{
+            font-size: 14px;
+            padding-bottom: 0.5rem;
+        }
+
+        & .vanLife__vanDetail-cta{
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width:690px){
+    .vanLife__vanDetail-hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        & img{
+            height: 400px;
+            width: 400px;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .vanLife__vanDetail-details{
+        padding-left: 0;
+        & p{
+            padding-bottom: 1rem;
+        }
+
+        & .vanLife__vanDetail-cta{
+            padding-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+
+    .vanLife-link{
+        margin-left: 2rem;
+    }
+    .vanLife__vanDetail-hero{
+        & img{
+            height: 350px;
+            width: 350px;
+        }
+    }
+
+    .vanLife__vanDetail-details {
+        & .header {
+            flex-direction: column;
+            align-items: flex-start;
+            & .van-type{
+                order:1;
+                padding: 4px 20px;
+                & h4{
+                    font-size: 14px;
+                }
+            }
+            & h1{
+                padding-top: 1.5rem;
+                order:2;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:375px){
+
+    .vanLife-link{
+        margin-left: 1rem;
+    }
+    .vanLife__vanDetail-hero{
+        & img{
+            height: 300px;
+            width: 300px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
